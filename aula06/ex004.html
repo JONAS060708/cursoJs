@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 10pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual  o seu nome ?')
+        document.writeln(`Olá, ${nome}! \nSeu nome tem ${nome.length} letras<br>`)
+        document.writeln(`Seu nome ${nome}, em letras maiusculas ficam assim ${nome.toUpperCase()}<br>`)
+        document.writeln(`Seu nome ${nome}, em letras minusculas fica assim ${nome.toLowerCase()}<br>`)
+        //FORMATANDO NUMEROS
+        var n1 = 1545.5
+        window.write(`o numero formatado : ${n1.toFixed(3)}`)//tres casas após o ponto
+        window.write(`trocando o ponto por virgula ${n1.toFixed(2).replace('.',',')}`)
+
+    </script>
+</body>
+</html>
