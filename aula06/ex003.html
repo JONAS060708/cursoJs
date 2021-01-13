@@ -21,9 +21,13 @@
 
     <script>
         var n1 = Number.parseInt(window.prompt('Digite um numero: '))//convertendo string para number
-        var n2 = Number.parseInt(window.prompt('Digite outro numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))//apenas number verifica o que tem na variavel podendo ser float
+        var numeroParaString = String(n2)
         var s = n1 + n2 
-        window.alert('A soma dos valores é : '+ s)
+
+        //window.alert('A soma dos valores é : '+ s)
+        window.alert(`a soma entre ${n1} e ${n2} é ${s}`) // outro tipo de inserir variavei no texto
+        
 
     </script>
 </body>
