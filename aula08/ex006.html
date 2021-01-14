@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       //OPERADORES RELACIONAIS 
+       //SEMPRE RETORNAM VALORES BOOLEAN OU SEJA (true) ou (false)
+       /*
+       > maior que
+       < menor que
+       >= maior igual que
+       <= menor igual que
+       == igualdade
+
+       === identico em valor e tipo :: operado de igualdade restrita usado para comparar number e string exemplo :  5 === '5' -> false pelo fato de que os valores não são identicos o primeiro 5 tem valor 5 e type number, já o segundo tem o valor 5 mas o type é string.Se usar o de igualdade  == o javascript vai passar o valor true pelo fato de 5 e '5' ter o mesmo valor.
+       !== desigual restrito
+       
+       != diferença
+       */
+
+       // OPERADORES LOGICOS
+       /*
+       
+       !  NEGAÇÃO (não) not
+       && CONJUNÇÃO (e) and
+       || DISJUNÇÃO  (ou) or
+
+
+       */
+        // PRECEDENCIA
+        /*
+
+        PARENTESES - ARITIMÉTIOCOS
+        RELACIONAVEIS - 
+        () + - / * 
+        > < >=
+        !
+        &&
+        ||
+        
+        */
+       // OPERADOR TERNÁRIO
+       /*
+       TESTE ? TRUE : FALSE
+        EX:
+        média >= 7 "aprovado" : "false"
+
+       */
+      var n1 = 7
+      var res = n1 % 6 == 0?"igual a 7" : "diferente de 7" // usando o ternário
+      document.write(res)
+
+    </script>
+</body>
+</html>
