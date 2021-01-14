@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(67, 107, 216);
+            color: white;
+            font: normal 10pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript</p>
+    <div id="msg" class="cmsg" name = "nmsg" >Clique em mim</div>
+    <script>
+        // ÁRVORE DOM -- MANIPULAR O DOM Document Object Model
+        window.document.write(`Olá mundo!<br>`)
+        window.document.write(window.document.charset , `<br>`)
+        window.document.write(window.document.URL , `<br>`)
+        window.document.write(window.navigator.appName,`<br>`)
+        
+        //PODE ACESSAR OS DADOS NA JANELA DE VARIAS MANEIRAS
+        /*
+            MARCA -- (tag name) comando :  getElementsByTagName()
+            */
+           var p1 = document.getElementsByTagName('p')[1] // entre colchetes está a colocação do elemento começando do 0
+           document.write(`Este é o conteúdo do paragrafo escolhido --::-- `,p1.innerText,`<br>`) // innerText mostra o valor da variavel 
+           p1.style.color = 'red'
+           var corpo = window.document.body
+           corpo.style.background = 'black'
+           //window.alert(p1.innerHTML) // innerHTML mostra o conteúdo com formatação original
+            /*
+            ID -- getElementById()
+            */
+           var div = window.document.getElementById('msg')
+           document.write(div.innerText,`<br>`)
+           div.style.background = "green"
+            /*
+            NOME -- getElementsByName()
+            CLASSE -- getElementsByClassName()
+            SELETOR -- querySelector() , querySelectorAll()
+        */
+            var query = window.document.querySelector('div.cmsg') // quando for ID usa ( # ) se for class usa ( . ) 
+            document.write(query.innerText = 'oi eu sou o goku ')
+    </script>
+</body>
+</html>
