@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var n1 = window.prompt(`digite um numero : `)
+        
+        for (let i = 0; i <= 20; i++) {
+            
+            var result = n1 ** i // operador ** potencia
+            document.write(`O numero ${n1} a potencia de ${i} é igual a : ${result}<br>`)
+            
+        }
+
+        var n = 3
+        // tudo pode ser escrito como operadores  += simplificados
+        n += 4 // n = n + 4 // n = 7
+        n -= 5 // n = n - 5 // n = 2
+        n *= 4 // n = n * 4 // n = 8
+        n **= 2 //n =  n **2 // n = 64
+        n %= 5 // n = n % 5 // n = 4
+      //pde-se também incrementar e decrementar variaveis usando n++ e n--
+      document.write(`valor de n : ${n}<br>`)
+      n++
+      document.write(`valor de n incrementado : ${n} <br>`)
+      n--
+      document.write(`valor de n decrementado : ${n} <br>`)
+    </script>
+</body>
+</html>
