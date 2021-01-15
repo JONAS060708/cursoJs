@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#d1{
+            background: green;
+            color: rgb(252, 251, 248);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#d2{
+            background: yellow;
+            color:black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--FORMA DE ADICIONAR EVENTOS DIRETO NA DIV -->
+    <div id="d1" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()" onmouseup="meio()" onmousewheel="rodando()" onmousemove="mover()">Interaja d1...</div>
+
+    <div id="d2">Interaja d2...</div>
+
+    <script>
+        //INFORMAÇÃO SOBRE EVENTOS DOM NO JAVASCRIPT --EVENTS REFERENCE MOZILLA
+        //FORMA DE ADICIONAR EVENTOS NO SCRIPT
+        var a2 = window.document.getElementById('d2')
+        a2.addEventListener('click',clica)
+        a2.addEventListener('mouseenter',entra)
+        a2.addEventListener('mouseout', sair)
+       
+        function clica() { 
+            a2.innerText = "clica!" 
+            a2.style.background = 'white'
+            a2.style.color = 'red'
+    }
+        function entra() {   
+            a2.innerText = "entra!"
+            a2.style.background = 'black'
+            a2.style.color = 'white'   }
+        function sair() {    
+            a2.innerText = "saiu!" 
+            a2.style.background = 'red'
+            a2.style.color = 'green'
+        }
+        //EVENTOS NA DIV
+        var a = window.document.getElementById('d1')
+        //function mover() { a.innerText = "Movendo!"      }
+        function saiu() {   
+            a.innerText = "Saiu!" 
+            a.style.background = 'gray'
+            
+        }
+        function entrar() {  
+            a.innerText = "entrou!"   
+            
+    }
+        function clicar(){
+           // var a = window.document.getElementById('d1')
+            a.innerText = "Clicou!"
+            a.style.background = 'red'
+           
+        }
+
+    </script>
+</body>
+</html>
