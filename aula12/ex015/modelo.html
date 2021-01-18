@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 1</title>
+    <title>VERIFICAOR DE IDADE</title>
     <!--PEGANDO ARQUIVOS EXTERNOS CSS-->
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>TÍTULO</h1>
+        <h1>VERIFICADOR DE IDADE</h1>
     </header>
     <section>
         <div>
-            testando div 1...
+            <p>Ano de Nascimento
+                <input type="number" id="txtano" name="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked > <label for="mas">Masculino</label> 
+                <input type="radio" id="fem" name="radsex"> <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
         </div>
-        <div>
-            testando div 2...
+        <div id="res">
+            Preencha os dados acima para ver o resultado! 
         </div>
     </section>
     <footer>

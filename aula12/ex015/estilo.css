@@ -1,6 +1,6 @@
 body{
     background: rgb(128, 128, 243);
-    font: normal 15pt Arial;
+    font: normal 13pt Arial;
     
 }
 header{
@@ -20,4 +20,15 @@ footer{
     text-align: center;
     color: white;
     font-style: italic;
+}
+img#foto{
+    border-radius: 100px;
+    padding-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+div#res{
+    text-align: center;
+    padding: 10px;
+    font: normal 15px Arial;
 }
