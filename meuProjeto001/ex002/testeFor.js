@@ -46,4 +46,44 @@ if (cont < 100) {
         }        
     }
 }
+var inp_a_01 = window.document.querySelector("input#inp_a_01")
+var inp_a_02 = window.document.querySelector("input#inp_a_02")
 
+var inp_b_01 = window.document.querySelector("input#inp_b_01")
+var inp_b_02 = window.document.querySelector("input#inp_b_02")
+
+
+
+
+
+//window.document.write(`${puchara1()}`)
+
+inp_a_01.addEventListener('click',puchara1)
+inp_a_02.addEventListener('click',puchara2)
+inp_b_01.addEventListener('click',puchara3)
+inp_b_02.addEventListener('click',puchara4)
+
+
+window.document.write(`jonas`)
+function puchara1() {
+    var valor_a_01 = Number(inp_a_01.value) 
+    //window.document.write(valor_a_01)
+    inp_a_01.style.background = 'black'
+    inp_a_01.style.color = 'white'
+    
+    return valor_a_01    
+}
+
+function puchara2() {
+    var valor_a_02 = Number(inp_a_01.value) 
+    //window.document.write(valor_a_01)
+    inp_a_02.style.background = 'black'
+    inp_a_02.style.color = 'white'    
+}
+
+function pintar() {
+
+obj.style.background = 'black'
+obj.style.color = 'white'
+    
+}
