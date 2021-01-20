@@ -1,25 +1,33 @@
+/* outra forma de declarar objetos 
+var meuCarro = new Object();
+meuCarro.fabricacao = "Ford";
+meuCarro.modelo = "Mustang";
+meuCarro.ano = 1969;
 
+var meuCarro = {fabricacao:'ford',modelo:"golf",ano: 1987}
 
-function gerar(){
-    //window.alert('gerou')
-    var td01_a = window.document.getElementById('td01-a')
-    var td02_a = window.document.getElementById('td02-a')
-    var td03_a = window.document.getElementById('td03-a')
-
-    for (let a = 0; a <= 10; a++) {
-        
-        for (let b = 0; b <= 10; b++) {
-            
-            for (let c = 0; c <= 10; c++) {
-                td01_a.innerText = `${a}`
-                td02_a.innerText = `${b}`
-                td03_a.innerText = `${c}`
-                
-            }
-            
-        }
-        
+function mostrarProps(obj, nomeDoObj) {
+    var resultado = "";
+    for (var i in obj) {
+      if (obj.hasOwnProperty(i)) {
+          resultado += nomeDoObj + "." + i + " = " + obj[i] + "\n";
+      }
     }
+    return resultado;
+  }
 
+  console.log(mostrarProps(meuCarro, "meuCarro"))
+  */
+ var bola15 = {n1:19,n2:20,n3:21,n4:22,n5:23,n6:24,n7:25}
 
-}
+ function mostraPos(obj , nomeDoObj) {
+     var resultado = ''
+     for(var i in  obj){
+         console.log(`este é o valor de  ${i} `)
+         if (obj.hasOwnProperty(i)) {
+             resultado += `${nomeDoObj}.${i} = ${obj[i]} \n`
+         }
+     }
+     return resultado
+ }
+console.log(mostraPos(bola15, 'bola'))
