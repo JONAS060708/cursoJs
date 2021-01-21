@@ -1,3 +1,5 @@
+
+
 var modeloHumano = {
     etnia:'',
     gênero:'',
@@ -21,10 +23,33 @@ function homemPardo(nome) {
     
     return modeloHumano   
 }
+function atirar(tiro=0, nome ) {
+if (modeloHumano.nome == nome) {
+    switch (tiro) {
+        case 1:
+            modeloHumano.saúde -= tiro
+            return modeloHumano.saúde
+
+            break;
+        case 2:
+            modeloHumano.saúde -= tiro
+            return modeloHumano.saúde
+            break;
+        default:
+            console.log(`sem balas ${tiro}`)
+            break;
+    }
+    console.log(modeloHumano)   
+}else{
+    console.log(`este nome : ${nome} não existe! `)
+}
+    
+}
 
 
 
-console.log(mulherParda('Jacinta'))
+mulherParda('Jacinta')
+homemPardo('joao')
 
-console.log(homemPardo('joao'))
 
+atirar(2,'joao')
