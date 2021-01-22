@@ -28,18 +28,17 @@ if (modeloHumano.nome == nome) {
     switch (tiro) {
         case 1:
             modeloHumano.saúde -= tiro
-            return modeloHumano.saúde
-
+            
             break;
         case 2:
             modeloHumano.saúde -= tiro
-            return modeloHumano.saúde
+            
             break;
         default:
             console.log(`sem balas ${tiro}`)
             break;
-    }
-    console.log(modeloHumano)   
+    } 
+    console.log(modeloHumano)
 }else{
     console.log(`este nome : ${nome} não existe! `)
 }
@@ -49,7 +48,7 @@ if (modeloHumano.nome == nome) {
 
 
 mulherParda('Jacinta')
+atirar(1,'Jacinta')
+
 homemPardo('joao')
-
-
 atirar(2,'joao')
