@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo! </h1>
+    <h1 class="h1">Olá, Mundo! </h1>
     <p>Já me livrei da maldição!</p>
 
     <script>
@@ -24,8 +24,15 @@
         window.alert('Minha primeira mensagem!')
         window.confirm('Está gostando de JavaScript')
         */
-        var nome = window.prompt('Qual é o seu nome?')
-        window.alert('O seu nome é : ' + nome)
+        var numero = window.prompt('Digite um número: ')
+        if (numero % 2 == 0) {
+            window.alert(`O seu numero é : ${numero} e é par!`)
+            var txt = document.getElementsByClassName('h1')
+            txt.s
+        }else{
+            window.alert(`O seu numero é : ${numero} e é ímpar!`)
+            
+        }
 
 
     </script>
