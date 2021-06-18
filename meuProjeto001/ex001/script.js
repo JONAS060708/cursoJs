@@ -18,6 +18,8 @@ function mostrarProps(obj, nomeDoObj) {
 
   console.log(mostrarProps(meuCarro, "meuCarro"))
   */
+ 
+ 
  var bola15 = {n1:19,n2:20,n3:21,n4:22,n5:23,n6:24,n7:25}
 
  function mostraPos(obj , nomeDoObj) {
