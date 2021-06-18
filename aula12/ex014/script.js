@@ -10,6 +10,7 @@ function carregar(){
         foto.src = 'imagens/manha.png'
         document.body.style.background = '#e6e1a4'
     }else if (hr >=12 && hr < 18) {
+        console.log('valor da variavel data é '+data);
         foto.src = 'imagens/tarde.png'
         document.body.style.background = '#e9760a'
     }else{
